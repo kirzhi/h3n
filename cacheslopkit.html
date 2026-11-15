@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html manifest="slopkit.manifest">
+<head>
+<title>WEBKIT HOST PS4 HEN KIRZHI GAMES</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #090d16;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  /* Judul di Pojok Kiri Atas */
+  .judul-kiri {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    text-align: left;
+    line-height: 1.1;
+    z-index: 10;
+  }
+  .judul-atas {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffcc00;
+    text-shadow: 2px 2px 6px #000000;
+  }
+  .judul-bawah {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: #00e5ff;
+    text-shadow: 2px 2px 6px #000000;
+  }
+  /* Tombol Support di Pojok Kanan Atas */
+  .support-kanan {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00e5ff;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 10;
+  }
+  .support-kanan a {
+    color: #ff1744;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ff1744;
+  }
+  /* Status Eksploit di Bawah Logo Tengah */
+  #msgs {
+    position: absolute;
+    bottom: 135px;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px #000000;
+    pointer-events: none;
+    z-index: 1;
+  }
+  /* Kredit di Bagian Paling Bawah */
+  .kredit-bawah {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #b0bec5;
+    text-shadow: 1px 1px 4px #000000;
+    z-index: 10;
+  }
+  .kredit-bawah a {
+    color: #00e5ff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="MEMASANG CACHE OFFLINE: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="CACHE BERHASIL DIPASANG ✔";setTimeout(function(){window.msgs.innerHTML="TUTUP DAN BUKA KEMBALI BROWSER SEKARANG...";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="GAGAL MEMASANG CACHE! - HAPUS DATA & BUKA ULANG BROWSER...";};
+</script>
+
+<div class="judul-kiri">
+  <span class="judul-atas">WEBKIT HOST PS4 HEN</span>
+  <span class="judul-bawah">KIRZHI GAMES</span>
+</div>
+
+<div class="support-kanan">
+  SUBSCRIBE: <a href="https://youtube.com" target="_blank">KIRZHI GAMES YOUTUBE</a>
+</div>
+
+<div id="msgs">MEMULAI PEMASANGAN CACHE...</div>
+
+<div class="kredit-bawah">
+  SPECIAL THANKS:<a href="https://x.com/GamerHack93/" target="_blank">GamerHack</a><a href="https://twitter.com/_AlAzif" target="_blank">@_AlAzif</a>ChendoChap<a href="https://x.com/Kameleonre_" target="_blank">@Kameleonre_</a>SiSTR0 Abc
+</div>
+
+</body>
+</html>
